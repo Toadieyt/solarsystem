@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+    align-items: center;
+}
+
+body {
+    background-image: url(images/space.png);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 100px;
+    grid-row: auto;
+    grid-gap: auto;
+}
+
+/*header*/
+
+header {
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    padding: 0 3rem;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.naglowek {
+    color: whitesmoke;
+    margin-right: 1000px;
+}
+
+header a {
+    margin: 0 1rem;
+    text-decoration: none;
+    padding: 1rem .5rem;
+    color: #bbbbbb;
+    transition: all 0.5s ease;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown ul {
+    width: 200px;
+    text-align: center;
+    position: absolute;
+    background: rgba(0, 40, 100, 0.3);
+    padding: 0;
+    list-style-type: none;
+    margin-top: 13px;
+    border-radius: 7px;
+    display: none;
+}
+
+.dropdown ul li {
+    padding: 0.4rem;
+}
+
+.dropdown ul li a{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    border-radius: 7%;
+    transition: all 0.5s ease;
+}
+
+.dropdown ul li a:hover {
+    color: #ffffff;
+	padding-left: 8px;
+    background: rgba(0, 20, 50, 0.8);
+    border-radius: 7px;
+}
+
+header a:hover {
+    color: whitesmoke;
+}
+
+.dropdown a:focus + ul, .dropdown a:hover + ul, .dropdown ul:hover {
+    display: block;
+}
+
+/*solarsystemtxt*/
+
+.solarsystemtxt {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    background-color: rgba(0, 40, 100, 0.3);
+    grid-column: 2;
+    grid-row: 1;
+    padding: 20px;
+    margin-top: 200px;
+    margin-right: 130px;
+    margin-left: 800px;
+    margin-bottom: 200px;
+}
+
+/*solar system*/
+
+.solarsystem {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.sun {
+    height: 120px;
+    width: 120px;
+    background-image: url(images/sun.jpg);
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow: -4px 2px 56px #f9c05f;
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 500px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+.mercury {
+    height: 20px;
+    width: 20px;
+    background: rgb(220, 80, 80);
+    border-radius: 50%;
+    position: absolute;
+    left: 42%;
+    top: 42%;
+    transform: translate(-50%,-50%);
+    animation: orbit2 3s linear infinite;
+}
+
+@keyframes orbit2 {
+    from{transform: rotate(0deg) translateX(70px) rotate(0deg);}
+    to{transform: rotate(360deg) translateX(70px) rotate(-360deg);}
+}
+
+.planetnames {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    position: absolute;
+    left: -62px;
+    top: -11px;
+}
+
+.mercury-outline,.venus-outline-1,.earth-outline-1,.mars-outline-1,.jupiter-outline-1,
+.saturn-outline-1,.uranus-outline-1,.neptune-outline-1 {
+    border-radius: 50%;
+    border: 1px dotted #ddd9;
+    position: absolute;
+    grid-column: 1;
+    grid-row: 2;
+    margin-left: 500px;
+    transform: translate(-50%,-50%);
+}
+
+.mercury-outline {
+    height: 140px;
+    width: 140px;
+}
+
+.venus {
+    height: 40px;
+    width: 40px;
+    background: url(images/venus.png);
+    background-size: 100%;
+    border-radius: 50%;
+    position: absolute;
+    left: 40%;
+    top: 42%;
+    transform: translate(-50%,-50%);
+    animation: orbit3 10s linear infinite;
+}
+
+@keyframes orbit3 {
+    from{transform: rotate(0deg) translateX(100px) rotate(0deg);}
+    to{transform: rotate(360deg) translateX(100px) rotate(-360deg);}
+}
+
+.venus-outline-1 {
+    height: 200px;
+    width: 200px;
+}
+
+.earth {
+    height: 50px;
+    width: 50px;
+    background: url(images/earth.png);
+    background-size: 100%;
+    border-radius: 50%;
+    position: absolute;
+    left: 44%;
+    top: 43%;
+    transform: translate(-50%,-50%);
+    animation: orbit4 20s linear infinite;
+}
+
+@keyframes orbit4 {
+    from{transform: rotate(0deg) translateX(150px) rotate(0deg);}
+    to{transform: rotate(360deg) translateX(150px) rotate(-360deg);}
+}
+
+.earth-outline-1 {
+    height: 300px;
+    width: 300px;
+}
+
+.mars {
+    height: 30px;
+    width: 30px;
+    background: url(images/mars.png);
+    background-size: 100%;
+    border-radius: 50%;
+    position: absolute;
+    left: 46.5%;
+    top: 46.5%;
+    transform: translate(-50%,-50%);
+    animation: orbit5 30s linear infinite;
+}
+
+@keyframes orbit5 {
+    from{transform: rotate(0deg) translateX(185px) rotate(0deg);}
+    to{transform: rotate(360deg) translateX(185px) rotate(-360deg);}
+}
+
+.mars-outline-1 {
+    height: 370px;
+    width: 370px;
+}
+
+.jupiter {
+    height: 40px;
+    width: 40px;
+    background: url(images/jupiter.png);
+    background-size: 100%;
+    border-radius: 50%;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+    animation: orbit6 60s linear infinite;
+}
+
+@keyframes orbit6 {
+    from{transform: rotate(0deg) translateX(217px) rotate(0deg);}
+    to{transform: rotate(360deg) translateX(217px) rotate(-360deg);}
+}
+
+.jupiter-outline-1 {
+    height: 430px;
+    width: 430px;
+}
+
+.saturn {
+    height: 50px;
+    width: 50px;
+    background: url(images/saturn.png);
+    background-size: 100%;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+    animation: orbit7 90s linear infinite;
+}
+
+@keyframes orbit7 {
+    from{transform: rotate(0deg) translateX(250px) rotate(0deg);}
+    to{transform: rotate(360deg) translateX(250px) rotate(-360deg);}
+}
+
+.saturn-outline-1 {
+    height: 500px;
+    width: 500px;
+}
+
+.uranus {
+    height: 30px;
+    width: 30px;
+    background: url(images/uranus.png);
+    background-size: 100%;
+    position: absolute;
+    left: 48%;
+    top: 48%;
+    transform: translate(-50%,-50%);
+    animation: orbit8 200s linear infinite;
+}
+
+@keyframes orbit8 {
+    from{transform: rotate(0deg) translateX(280px) rotate(0deg);}
+    to{transform: rotate(360deg) translateX(280px) rotate(-360deg);}
+}
+
+.uranus-outline-1 {
+    height: 560px;
+    width: 560px;
+}
+
+.neptune {
+    height: 30px;
+    width: 30px;
+    background: url(images/neptune.png);
+    background-size: 100%;
+    position: absolute;
+    left: 48%;
+    top: 48%;
+    transform: translate(-50%,-50%);
+    animation: orbit9 400s linear infinite;
+}
+
+@keyframes orbit9 {
+    from{transform: rotate(0deg) translateX(310px) rotate(0deg);}
+    to{transform: rotate(360deg) translateX(310px) rotate(-360deg);}
+}
+
+.neptune-outline-1 {
+    height: 620px;
+    width: 620px;
+}
+
+/*footer*/
+
+footer {
+    width: 100%;
+    height: 120px;
+    position: sticky;
+    font-family: "Montserrat", sans-serif;
+	background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+}
+
+footer .autor {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 18px;
+	margin: 70px;
+	font-weight: 500;
+	position: relative;
+}
+
+footer a {
+    color: #bbbbbb;
+    text-decoration: none;
+    font-size: 18px;
+	margin: 70px;
+	font-weight: 500;
+	position: relative;
+    transition: all 0.5s ease;
+}
+
+footer a:hover {
+    color: whitesmoke;
+}
+
+
+
