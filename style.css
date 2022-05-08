@@ -11,7 +11,18 @@ body {
     background-image: url(images/space.png);
 }
 
+.body-planety {
+    background-image: url(images/space2.jpg);
+}
+
 main {
+    display: grid;
+    grid-template-columns: 100px;
+    grid-row: auto;
+    grid-gap: auto;
+}
+
+.main2 {
     display: grid;
     grid-template-columns: 100px;
     grid-row: auto;
@@ -30,7 +41,7 @@ header {
     font-family: "Montserrat", sans-serif;
     background-color: rgba(0, 0, 0, 0.3);
     display: flex;
-    flex-direction: row;
+    position: fixed;
     justify-content: flex-end;
     align-items: center;
 }
@@ -93,24 +104,10 @@ header a:hover {
     display: block;
 }
 
-/*solarsystemtxt*/
-
-.solarsystemtxt {
-    font-family: "Montserrat", sans-serif;
-    color: white;
-    background-color: rgba(0, 40, 100, 0.3);
-    grid-column: 2;
-    grid-row: 1;
-    padding: 20px;
-    margin-top: 200px;
-    margin-right: 130px;
-    margin-left: 800px;
-    margin-bottom: 200px;
-}
-
 /*solar system*/
 
 .solarsystem {
+    margin-top: 100px;
     grid-column: 1;
     grid-row: 1;
 }
@@ -328,12 +325,236 @@ header a:hover {
     width: 620px;
 }
 
+/*solarsystemtxt*/
+
+p {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+.solarsystemtxt {
+    background-color: rgba(57, 58, 58, 0.3);
+    grid-column: 2;
+    grid-row: 1;
+    padding: 20px;
+    margin-top: 350px;
+    margin-right: 130px;
+    margin-left: 800px;
+    margin-bottom: 200px;
+}
+
+/*----------------------------------------------------planety----------------------------------------------------*/
+
+.naglowek-planety-h1, .naglowek-planety-h2, .naglowek-planety-gallery-h2 {
+    font-family: "Montserrat", sans-serif;
+    color: whitesmoke;
+    position: absolute;
+    
+}
+
+.naglowek-planety-h1 {
+    border: whitesmoke solid;
+    padding: 20px;
+    margin-left: 770px;
+    margin-top: 200px;
+}
+
+.naglowek-planety-gallery-h1 {
+    font-family: "Montserrat", sans-serif;
+    color: whitesmoke;
+    border: whitesmoke solid;
+    padding: 20px;
+    margin-top: 300px;
+    margin-left: 800px;
+    margin-right: 800px;
+    text-align: center;
+}
+
+.naglowek-planety-h2 {
+    margin-left: 860px;
+    margin-top: 350px;
+    color: #bbbbbb;
+    transition: all 0.5s ease;
+}
+
+.naglowek-planety-h2:hover {
+    font-size: 160%;
+    color: white;
+}
+
+.naglowek-planety-gallery-h2 {
+    margin-left: 860px;
+    margin-top: 100px;
+    color: #bbbbbb;
+    transition: all 0.5s ease;
+}
+
+.naglowek-planety-gallery-h2:hover {
+    font-size: 160%;
+    color: white;
+}
+
+/*---*/
+
+.planety-planetnames {
+    font-weight: bold;
+    font-size: 200%;
+    color: azure;
+}
+
+.sun-object {
+    margin-top: 500px;  
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.mercury-object {
+    margin-top: 500px;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.venus-object {
+    margin-top: 500px; 
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.earth-object {
+    margin-top: 400px; 
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.mars-object {
+    margin-top: 400px;
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.jupiter-object {
+    margin-top: 400px; 
+    width: 800px;
+    height: 800px;
+    grid-column: 1;
+    grid-row: 6;
+}
+
+.saturn-object {
+    margin-top: 450px; 
+    grid-column: 1;
+    grid-row: 7;
+}
+
+.uranus-object {
+    margin-top: 500px; 
+    width: 800px;
+    height: 800px;
+    grid-column: 1;
+    grid-row: 8;
+}
+
+.neptune-object {
+    margin-top: 400px;
+    width: 800px;
+    height: 800px;
+    grid-column: 1;
+    grid-row: 9;
+}
+
+/*planets text*/
+
+.main2 p {
+    text-align: center;
+    margin-top: 400px;
+    margin-left: 1000px;
+    margin-right: 200px;
+    padding: 50px;
+    border: solid rgba(255, 255, 255, 0.8);
+}
+.sun-txt {
+    background-color: rgba(255, 120, 0, 0.3);
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.mercury-txt {
+    background-color: rgba(150, 150, 160, 0.3);
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.venus-txt {
+    background-color: rgba(250, 150, 0, 0.3);
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.earth-txt {
+    background-color: rgba(80, 120, 180, 0.3);
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.mars-txt {
+    background-color: rgba(200, 100, 0, 0.3);
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.jupiter-txt {
+    background-color: rgba(200, 150, 150, 0.3);
+    grid-column: 2;
+    grid-row: 6;
+}
+
+.saturn-txt {
+    background-color: rgba(200, 200, 180, 0.3);
+    grid-column: 2;
+    grid-row: 7;
+}
+
+.uranus-txt {
+    background-color: rgba(200, 200, 220, 0.3);
+    grid-column: 2;
+    grid-row: 8;
+}
+
+.neptune-txt {
+    background-color: rgba(150, 180, 200, 0.3);
+    grid-column: 2;
+    grid-row: 9;
+    margin-bottom: 100px;
+}
+
+/*galeria*/
+
+.galeria {
+    display: grid;
+    grid-template-columns: 500px;
+    grid-column: 3;
+    grid-row: 3;
+    grid-gap: 100px;
+    margin-top: 100px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 80px;
+    padding-bottom: 150px;
+}
+
+.galeria img {
+    border: solid rgba(255, 255, 255, 0.5);
+    transition: all 0.5s ease;
+}
+
+.galeria img:hover {
+    border: solid white;
+}
+
 /*footer*/
 
 footer {
     width: 100%;
     height: 120px;
-    position: sticky;
     font-family: "Montserrat", sans-serif;
 	background-color: rgba(0, 0, 0, 0.3);
     display: flex;
@@ -346,7 +567,6 @@ footer .autor {
     font-size: 18px;
 	margin: 70px;
 	font-weight: 500;
-	position: relative;
 }
 
 footer a {
@@ -355,7 +575,6 @@ footer a {
     font-size: 18px;
 	margin: 70px;
 	font-weight: 500;
-	position: relative;
     transition: all 0.5s ease;
 }
 
