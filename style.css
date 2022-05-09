@@ -378,7 +378,7 @@ p {
 }
 
 .naglowek-planety-h2:hover {
-    font-size: 160%;
+    transform: scale(1.2);
     color: white;
 }
 
@@ -390,7 +390,7 @@ p {
 }
 
 .naglowek-planety-gallery-h2:hover {
-    font-size: 160%;
+    transform: scale(1.2);
     color: white;
 }
 
@@ -543,11 +543,15 @@ p {
 
 .galeria img {
     border: solid rgba(255, 255, 255, 0.5);
-    transition: all 0.5s ease;
+    transition: all 1s;
 }
 
 .galeria img:hover {
     border: solid white;
+}
+
+.galeria img:active {
+    transform: scale(1.2);
 }
 
 /*footer*/
@@ -581,6 +585,5 @@ footer a {
 footer a:hover {
     color: whitesmoke;
 }
-
 
 
