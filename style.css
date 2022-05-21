@@ -12,6 +12,10 @@ body {
     background-image: url(images/space.png);
 }
 
+body:not(header, footer) {
+    z-index: 1;
+}
+
 .body-planety {
     background-image: url(images/space2.jpg);
 }
@@ -45,6 +49,7 @@ header {
     position: fixed;
     justify-content: flex-end;
     align-items: center;
+    z-index: 2;
 }
 
 .naglowek {
@@ -632,6 +637,7 @@ footer {
 	background-color: rgba(0, 0, 0, 0.9);
     display: flex;
     justify-content: center;
+    z-index: 2;
 }
 
 footer .autor {
